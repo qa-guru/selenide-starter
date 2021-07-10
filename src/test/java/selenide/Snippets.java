@@ -50,9 +50,10 @@ public class Snippets {
     $(byText("full text")).click();
     $(withText("ull tex")).click();
 
-    $("").parent();     // find parent elem
-    $("").sibling(1);   // find down bro elem
-    $("").preceding(1); // find up bro elem
+    $("").parent();       // find parent element
+    $("").sibling(2);     // find down third sibling element
+    $("").preceding(0);   // find up first sibling element
+    $("").closest("div"); // find up the tree the next element with tag 
 
     $("div").$("h1").find(byText("abc")).click();
 
