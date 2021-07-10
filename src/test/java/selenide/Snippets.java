@@ -50,6 +50,9 @@ public class Snippets {
     $(byText("full text")).click();
     $(withText("ull tex")).click();
 
+    $("").parent();     // find parent elem
+    $("").sibling(1);   // find down bro elem
+    $("").preceding(1); // find up bro elem
 
     $("div").$("h1").find(byText("abc")).click();
 
@@ -104,8 +107,7 @@ public class Snippets {
 
     //longer timeouts
     $("").shouldBe(visible, Duration.ofSeconds(30));
-    $("").waitUntil(visible, 30000);
-
+    $("").waitUntil(visible, 30000);  //is deprecated
 
   }
 
